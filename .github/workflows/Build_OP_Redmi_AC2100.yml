@@ -70,7 +70,7 @@ jobs:
   
     - name: Configuration Customization - R4CM
       env:
-        CONFIG_FILE: 'R4CM'
+        CONFIG_FILE: 'redmi_ac2100.config'
       run: |
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x ./customize.sh && ./customize.sh
